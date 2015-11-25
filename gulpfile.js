@@ -114,27 +114,12 @@ gulp.task('build', function(cb){
     },
     dir: 'www-build',
     modules: [
-      {
-        name: '../common',
-        include: [
-          'jquery',
-          'app/lib',
-          'app/controller/Base',
-          'app/model/Base'
-        ]
-      },
-      {
-        name: '../page1',
-        include: ['app/main1'],
-        exclude: ['../common']
-      },
-
-      {
-        name: '../page2',
-        include: ['app/main2'],
-        exclude: ['../common']
-      }
-    ]
+       //Optimize the application files. jQuery is not
+       //included since it is already in require-jquery.js
+       {
+           name: "../main"
+       }
+   ]
   }, function(buildResponse){
     cb();
   }, cb);
