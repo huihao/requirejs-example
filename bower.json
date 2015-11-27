@@ -25,6 +25,10 @@
     "susy": "~2.2.5",
     "normalize.css": "~3.0.3",
     "breakpoint-sass": "~2.4.0",
-    "jquery":"~1.11.3"
+    "jquery": "~1.11.3"
+  },
+  "devDependencies": {
+    "jsx-requirejs-plugin": "~0.6.2",
+    "text": "requirejs-text#~2.0.14"
   }
 }

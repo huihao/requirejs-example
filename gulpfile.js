@@ -111,8 +111,10 @@ gulp.task('build', function(cb){
     baseUrl: 'js/lib',
     paths: {
       app: '../app'
+
     },
     dir: 'www-build',
+     stubModules: ['jsx', 'text', 'JSXTransformer'],
     modules: [
        //Optimize the application files. jQuery is not
        //included since it is already in require-jquery.js
