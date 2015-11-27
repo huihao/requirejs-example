@@ -3,8 +3,9 @@ require.config({
     paths: {
         components: "../components",
         app: '../app',
-        react: 'react-dom',
-        "JSXTransformer": 'JSXTransformer'
+        react: 'react-with-addons',
+        reactDOM:'react-dom',
+        JSXTransformer: 'JSXTransformer'
     },
     jsx: {
         fileExtension: '.jsx',
@@ -12,11 +13,9 @@ require.config({
         stripTypes: true
     }
 });
-require(['app/cal', 'jquery', 'react'], function(cal, $, React) {
+require(['app/cal', 'jquery', 'react','reactDOM',"jsx!components/Panel"], function(cal, $,React,ReactDOM,Panel) {
     // App.initialize();
-    //Panel = React.createFactory(Panel);
-    //React.render(Panel,document.getElementById('panel'));
-    console.log(React)
+    ReactDOM.render(React.createElement(Panel, null),document.getElementById('panel'));
     console.log(cal.min(2, 1));
     $.ajax({
         url: "/test",
