@@ -1,8 +1,7 @@
-define(['react'],function(React) {
+define(['react','jsx!./Button'],function(React,Button) {
   var Panel=React.createClass({
       render: function() {
-          return ( < div className = "Panel" >
-              Hello, world!I am a Panel. < /div>
+          return ( < div className = "Panel" ><Button />< /div>
           );
         }
   });

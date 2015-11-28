@@ -9,6 +9,9 @@
   "keywords": [
     "requirejs"
   ],
+   "babel": {
+     "plugins": ["syntax-jsx"]
+  }
   "author": "wuhuihao",
   "license": "ISC",
   "devDependencies": {
