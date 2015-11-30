@@ -1,0 +1,39 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'D:\\NodeEnvir\\nodejs\\node.exe',
+1 verbose cli   'C:\\Users\\huiha\\AppData\\Roaming\\npm\\node_modules\\cnpm\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   '--userconfig=C:\\Users\\huiha\\.cnpmrc',
+1 verbose cli   '--disturl=https://npm.taobao.org/mirrors/node',
+1 verbose cli   '--cache=C:\\Users\\huiha\\.cnpm',
+1 verbose cli   '--registry=https://registry.npm.taobao.org',
+1 verbose cli   '--node-gyp=C:\\Users\\huiha\\AppData\\Roaming\\npm\\node_modules\\cnpm\\node_modules\\pangyp\\bin\\node-gyp.js',
+1 verbose cli   'install',
+1 verbose cli   'karma-requirejs' ]
+2 info using npm@2.13.5
+3 info using node@v4.1.1
+4 verbose install initial load of E:\front\requirejs-example\package.json
+5 verbose stack Error: Failed to parse json
+5 verbose stack Unexpected token 'a' at 15:4
+5 verbose stack   "author": "wuhuihao",
+5 verbose stack    ^
+5 verbose stack     at parseError (C:\Users\huiha\AppData\Roaming\npm\node_modules\cnpm\node_modules\npm\node_modules\read-package-json\read-json.js:379:11)
+5 verbose stack     at parseJson (C:\Users\huiha\AppData\Roaming\npm\node_modules\cnpm\node_modules\npm\node_modules\read-package-json\read-json.js:68:23)
+5 verbose stack     at C:\Users\huiha\AppData\Roaming\npm\node_modules\cnpm\node_modules\npm\node_modules\read-package-json\read-json.js:48:5
+5 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (evalmachine.<anonymous>:380:3)
+6 verbose cwd E:\front\requirejs-example
+7 error Windows_NT 10.0.10240
+8 error argv "D:\\NodeEnvir\\nodejs\\node.exe" "C:\\Users\\huiha\\AppData\\Roaming\\npm\\node_modules\\cnpm\\node_modules\\npm\\bin\\npm-cli.js" "--userconfig=C:\\Users\\huiha\\.cnpmrc" "--disturl=https://npm.taobao.org/mirrors/node" "--cache=C:\\Users\\huiha\\.cnpm" "--registry=https://registry.npm.taobao.org" "--node-gyp=C:\\Users\\huiha\\AppData\\Roaming\\npm\\node_modules\\cnpm\\node_modules\\pangyp\\bin\\node-gyp.js" "install" "karma-requirejs"
+9 error node v4.1.1
+10 error npm  v2.13.5
+11 error file E:\front\requirejs-example\package.json
+12 error code EJSONPARSE
+13 error Failed to parse json
+13 error Unexpected token 'a' at 15:4
+13 error   "author": "wuhuihao",
+13 error    ^
+14 error File: E:\front\requirejs-example\package.json
+15 error Failed to parse package.json data.
+15 error package.json must be actual JSON, not just JavaScript.
+15 error
+15 error This is not a bug in npm.
+15 error Tell the package author to fix their package.json file. JSON.parse
+16 verbose exit [ 1, true ]

@@ -13,6 +13,7 @@ require.config({
         stripTypes: true
     }
 });
+
 require(['app/cal', 'jquery', 'react','reactDOM',"jsx!components/Panel"], function(cal, $,React,ReactDOM,Panel) {
     // App.initialize();
     ReactDOM.render(React.createElement(Panel, null),document.getElementById('panel'));

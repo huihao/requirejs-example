@@ -123,7 +123,7 @@ gulp.task('build', function(cb) {
             harmony: true,
             stripTypes: true
         },
-        dir: 'www-build',
+        dir: 'build',
         stubModules: ['jsx', 'text', 'JSXTransformer'],
         modules: [
             //Optimize the application files. jQuery is not
