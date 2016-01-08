@@ -7,19 +7,26 @@ Object.keys(window.__karma__.files).forEach(function(file) {
     // Normalize paths to RequireJS module names.
     // If you require sub-dependencies of test files to be loaded as-is (requiring file extension)
     // then do not normalize the paths
-    var normalizedTestModule = file.replace(/^\/base\/|\.js$/g, '');
+    var normalizedTestModule = file;
     allTestFiles.push(normalizedTestModule);
   }
 });
 
 require.config({
   // Karma serves files under /base, which is the basePath from your config file
-  baseUrl: '/base/src',
-
-  // example of using a couple path translations (paths), to allow us to refer to different library dependencies, without using relative paths
+  baseUrl: '/base/src/js/lib',
   paths: {
+      components: "../components",
+      app: '../app',
+      react: 'react-with-addons',
+      reactDOM:'react-dom',
+      JSXTransformer: 'JSXTransformer'
   },
-
+  jsx: {
+      fileExtension: '.jsx',
+      harmony: true,
+      stripTypes: true
+  },
   // dynamically load all test files
   deps: allTestFiles,
 

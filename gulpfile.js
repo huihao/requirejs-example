@@ -5,7 +5,6 @@ var autoprefixer = require('gulp-autoprefixer');
 var imagemin = require('gulp-imagemin');
 var del = require('del');
 var connect = require('gulp-connect');
-var jshint = require('gulp-jshint');
 var compass = require('gulp-compass');
 var replace = require('gulp-replace');
 var minifyCSS = require('gulp-minify-css');
@@ -81,8 +80,6 @@ gulp.task('compass', function() {
 
 gulp.task('script', function() {
     return gulp.src(paths.source.scripts)
-        .pipe(jshint())
-        .pipe(jshint.reporter('default'))
         .pipe(gulp.dest(paths.build.scripts))
         .pipe(connect.reload());
 });

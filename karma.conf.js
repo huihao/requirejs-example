@@ -16,11 +16,16 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       {pattern: 'src/js/**/*.js', included: false},
-      {pattern: 'build/js/**/*.js', included: false},
+//      {pattern: 'build/js/**/*.js', included: false},
       {pattern: 'test/js/**/*Spec.js', included: false},
       'test/js/test-main.js'
     ],
 
+    plugins: [
+      "karma-chrome-launcher",
+      "karma-jasmine",
+      "karma-requirejs"
+    ],
 
     // list of files to exclude
     exclude: [
@@ -50,7 +55,7 @@ module.exports = function(config) {
 
     // level of logging
     // possible values: config.LOG_DISABLE || config.LOG_ERROR || config.LOG_WARN || config.LOG_INFO || config.LOG_DEBUG
-    logLevel: config.LOG_INFO,
+    logLevel: config.LOG_DEBUG,
 
 
     // enable / disable watching file and executing tests whenever any file changes
